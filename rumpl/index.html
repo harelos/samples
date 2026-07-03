@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The worst-designed thing you own is on your couch</title>
+<meta name="description" content="We spend a third of our lives under blankets and almost no thought on them. Two guys stuck in a snowstorm decided that was strange.">
+<meta property="og:title" content="Why the blanket on your couch is the worst-designed thing you own">
+<meta property="og:description" content="We spend a third of our lives under blankets and almost no thought on them. Two guys stuck in a snowstorm decided that was strange.">
+<meta property="og:type" content="article">
+<style>
+  :root{
+    --paper:#fbfaf7; --ink:#1c1a17; --soft:#57514a; --faint:#8a8178;
+    --line:#e7e2d9; --accent:#b4552d; --accent2:#7a3f22;
+    --sand:#f2ede3; --card:#15130f;
+    --serif:Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.68;font-size:19px;-webkit-font-smoothing:antialiased}
+  .ribbon{background:var(--card);color:#f3ede2;font-family:var(--mono);font-size:12px;letter-spacing:.02em;text-align:center;padding:9px 16px}
+  .ribbon b{color:#e6a86a}
+  .wrap{max-width:700px;margin:0 auto;padding:0 22px}
+  .masthead{border-bottom:1px solid var(--line);padding:22px 0 16px;margin-bottom:26px;display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap}
+  .masthead .name{font-family:var(--serif);font-weight:700;font-size:20px;letter-spacing:.02em}
+  .masthead .meta{font-family:var(--mono);font-size:11.5px;color:var(--faint);text-transform:uppercase;letter-spacing:.14em}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:6px 0 12px}
+  h1{font-family:var(--serif);font-weight:700;font-size:clamp(30px,6vw,44px);line-height:1.1;letter-spacing:-.01em;margin-bottom:14px}
+  .subhead{font-family:var(--serif);font-size:22px;line-height:1.45;color:var(--soft);font-style:italic;margin-bottom:20px}
+  .byline{font-family:var(--mono);font-size:12px;color:var(--faint);text-transform:uppercase;letter-spacing:.1em;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:26px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .byline .dot{width:3px;height:3px;background:var(--faint);border-radius:50%;display:inline-block}
+  article p{margin:0 0 20px}
+  article p.drop::first-letter{font-family:var(--serif);font-size:3.3em;float:left;line-height:.82;padding:6px 10px 0 0;color:var(--accent2)}
+  article h2{font-family:var(--serif);font-size:27px;line-height:1.2;margin:32px 0 12px}
+  article b{font-weight:700}
+  article em{font-style:italic}
+  .pull{font-family:var(--serif);font-size:25px;line-height:1.35;color:var(--accent2);border-left:3px solid var(--accent);padding:6px 0 6px 20px;margin:26px 0}
+  .imgph{background:var(--sand);border:1px dashed #cdbfa8;border-radius:10px;padding:16px 18px;margin:24px 0}
+  .imgph .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent2);margin-bottom:7px}
+  .imgph .txt{font-family:var(--mono);font-size:13px;line-height:1.55;color:var(--soft)}
+  .note{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:22px 0;font-size:15px;color:var(--soft)}
+  .note b{color:var(--accent2);font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;display:block;margin-bottom:4px}
+  .cutoff{text-align:center;margin:40px 0 8px}
+  .cutoff .line{display:flex;align-items:center;gap:16px;color:var(--faint);font-family:var(--mono);font-size:13px;letter-spacing:.2em;text-transform:uppercase}
+  .cutoff .line::before,.cutoff .line::after{content:"";flex:1;height:1px;background:var(--line)}
+  .cutoff .tc{font-family:var(--serif);font-style:italic;font-size:24px;color:var(--accent2);margin-top:18px}
+  /* handoff */
+  .handoff{background:var(--card);color:#efe8dc;border-radius:16px;padding:30px 26px;margin:40px 0 60px}
+  .handoff .h-tag{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#e6a86a;margin-bottom:12px}
+  .handoff h3{font-family:var(--serif);font-weight:700;font-size:25px;line-height:1.2;color:#fff;margin-bottom:14px}
+  .handoff p{font-size:16.5px;line-height:1.6;color:#d9cfc0;margin-bottom:14px}
+  .handoff p b{color:#fff}
+  .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+  .btn{display:inline-block;font-family:var(--sans);font-weight:600;font-size:15px;text-decoration:none;padding:13px 20px;border-radius:9px}
+  .btn.primary{background:#e6a86a;color:#1c1409}
+  .btn.ghost{background:transparent;color:#efe8dc;border:1px solid #48423a}
+  .handoff .sig{margin-top:18px;font-family:var(--mono);font-size:12px;color:#9a9083;letter-spacing:.04em}
+  .foot{max-width:700px;margin:0 auto;padding:0 22px 60px;color:var(--faint);font-size:13px}
+  @media(max-width:520px){ body{font-size:18px} .subhead{font-size:20px} }
+</style>
+</head>
+<body>
+<div class="ribbon">SPEC SAMPLE &middot; written on spec for <b>Rumpl</b> by Harel Filiba &middot; not affiliated</div>
+<div class="wrap">
+  <div class="masthead">
+    <div class="name">The Gear Desk</div>
+    <div class="meta">Outdoors &middot; Design</div>
+  </div>
+  <div class="eyebrow">Outdoors &middot; Design</div>
+  <h1>Why the blanket on your couch is the worst-designed thing you own</h1>
+  <div class="subhead">We spend a third of our lives under blankets and just about no design thought on them. A pair of guys stranded in a snowstorm decided that was strange enough to fix.</div>
+  <div class="byline"><span>By Harel Filiba</span><span class="dot"></span><span>Updated July 2026</span><span class="dot"></span><span>5 min read</span></div>
+  <article>
+    <div class="imgph"><div class="tag">Image direction</div><div class="txt">Editorial outdoor photo. Two friends wrapped in packable blankets on the open tailgate of a truck at dusk, mountains behind, a thermos between them. Cozy, aspirational, real. No visible branding or logos.</div></div>
+    <p class="drop">The idea showed up, as good ideas often do, at the worst possible moment. A snowstorm, a stuck car, two friends running the heater in bursts to stay warm, and one of them pulling a sleeping bag over both of them like a blanket. And somewhere in the shivering it landed: why is this warm thing so much better than the thing we actually call a blanket?</p>
+    <p>Because think about the blanket you own. Really think about it. It is almost certainly cotton or wool, materials chosen centuries ago, and it is heavy, it takes forever to dry, it does nothing once it is damp, and it crushes down to roughly the size of itself, which is to say it does not pack at all.</p>
+    <p>We just accept all of that. The blanket is maybe the single object we are in contact with most in a lifetime, sleep and couch and everything in between, and it is also one of the last ones nobody bothered to rethink. It works well enough. Nobody complains. So it stayed frozen in time while everything around it got better.</p>
+    <div class="pull">We put a person on the moon and left the blanket essentially where it was in 1850. That gap is either an oversight or an opportunity, depending on who is looking at it.</div>
+    <p>And here is the quiet thing those two cold friends saw that most of us never do. The problem was already solved. Just in a different aisle. The puffy jacket, the sleeping bag, the whole world of technical insulation had spent decades learning how to trap warmth in something feather-light, packable, and quick to dry. All of that engineering, and none of it had ever been pointed at the humble blanket.</p>
+    <div class="note"><b>Proof slot &mdash; to source &amp; verify</b>Source here any material and performance specifics (insulation type, recycled content, packability claims) so the finished piece rests on verifiable numbers, not adjectives.</div>
+    <p>So the question they could not put down was almost embarrassingly obvious once said out loud. What if a blanket were built like the gear that actually keeps people warm in the cold? Light enough to carry anywhere. Warm even when damp. Packable down to nothing. As at home on a freezing sideline as on the couch.</p>
+    <p>The single decision that made that possible, the swap that turns a heavy cotton throw into something you would actually take outside, is where the shivering finally paid off.</p>
+  </article>
+  <div class="cutoff"><div class="line">the piece continues</div><div class="tc">To be continued&hellip;</div></div>
+  <div class="handoff">
+    <div class="h-tag">A note from the person who wrote this</div>
+    <h3>I wrote the opening above for Rumpl, on spec.</h3>
+    <p>I'm <b>Harel Filiba</b>. I write long-form advertorials and retention email for DTC brands, and I wrote this because the &lsquo;we put puffy-jacket tech into a blanket&rsquo; idea is a genuinely fun, visual hook and right now it is doing nothing on cold traffic. A story-led page lets a stranger feel why an ordinary object was quietly overdue for a redesign.</p>
+    <p>What you just read is roughly the first half. The second half introduces the product the way the story earns it, then hands the reader straight into your funnel. If you want the <b>full piece, free, no strings</b>, and a look at the landing page it drops into, grab fifteen minutes below. If the timing is wrong, keep this one on me.</p>
+    <div class="btns">
+      <a class="btn primary" href="https://calendly.com/tigerbrandsglobal" target="_blank" rel="noopener">Book 15 minutes with Harel &rarr;</a>
+    </div>
+    <div class="sig">Written by hand. No AI slop. That is the whole point. &mdash; Harel Filiba</div>
+  </div>
+</div>
+<div class="foot">Sample advertorial written independently by Harel Filiba to demonstrate copy and funnel work. Not created, endorsed, or authorized by Rumpl. Product and brand names belong to their owners. Any statistics or testimonials in the finished piece would be sourced and verified before publication.</div>
+</body>
+</html>
